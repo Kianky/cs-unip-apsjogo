@@ -978,6 +978,7 @@ GameObject:
   - component: {fileID: 493626957}
   - component: {fileID: 493626954}
   - component: {fileID: 493626953}
+  - component: {fileID: 493626958}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -994,7 +995,7 @@ Transform:
   m_GameObject: {fileID: 493626951}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.38, z: 0}
+  m_LocalPosition: {x: -7, y: -0.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1016,6 +1017,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 1090603457}
   speed: 5
+  estaParado: 0
+  direcao: 2
 --- !u!114 &493626954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1112,6 +1115,75 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 0
+--- !u!114 &493626958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493626951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d39d75f34249a145865f0ebd96a44bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSprite: {fileID: 336666212}
+  spritesCima:
+  - {fileID: 123831042, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 713572307, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 1004639738, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: -1483183331, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 1261824034, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 99410085, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  spritesBaixo:
+  - {fileID: 1634277969, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: -312337472, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 1127961647, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 1045418717, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 1650582939, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: -727208073, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  spritesEsquerda:
+  - {fileID: -2129239287, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 1827775100, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 1783128373, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: -263842295, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 594409210, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 739647866, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  spritesDireita:
+  - {fileID: 507278463, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 1371881400, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 1274602848, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 388973367, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 1666914028, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: -2104461471, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  andandoCima:
+  - {fileID: -222584451, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: -2058144260, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: -1883705172, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: -1207568533, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 1989217679, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: -178773407, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  andandoBaixo:
+  - {fileID: -1161999816, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 2076695447, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 491116568, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: -344263002, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 1457872815, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 263134353, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  andandoEsquerda:
+  - {fileID: 1434536476, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 328231491, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 662303050, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: -301128409, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: -177339396, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: -180162640, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  andandoDireita:
+  - {fileID: 1970107968, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 613739098, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 473193017, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 532933754, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: -816579079, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
+  - {fileID: 1940248276, guid: c303f4006652ff04fb8fc638fc1d36ed, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,7 +1486,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 33
   m_TargetDisplay: 0
 --- !u!224 &1317899294
 RectTransform:

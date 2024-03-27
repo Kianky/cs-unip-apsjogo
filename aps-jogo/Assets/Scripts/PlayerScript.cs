@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    PlayerMove move;
+    internal PlayerMove move;
 
     private void Start()
     {
